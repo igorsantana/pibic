@@ -1,0 +1,30 @@
+WorkingPath: /Users/igorsantana/git/pibic/datasets/CARSKit.Workspace/
+Your original rating data path: /Users/igorsantana/git/pibic/datasets/gowalla_carskit2.csv
+Current working path: /Users/igorsantana/git/pibic/datasets/CARSKit.Workspace/
+Data transformaton completed (from Compact to Binary format). See new rating file: /Users/igorsantana/git/pibic/datasets/CARSKit.Workspace/ratings_binary.txt
+Dataset: ...ARSKit.Workspace/ratings_binary.txt
+DataPath: /Users/igorsantana/git/pibic/datasets/CARSKit.Workspace/ratings_binary.txt
+Rating data set has been successfully loaded.
+
+/************************************************************************************
+ *
+ * Dataset: /Users/igorsantana/git/pibic/datasets/CARSKit.Workspace/ratings_binary.txt
+ * 
+ * Statistics of U-I-C Matrix:
+ * User amount: 243
+ * Item amount: 88
+ * Rate amount: 9969
+ * Context dimensions: 5 (day, eps001, eps10, eps300, hour)
+ * Context conditions: 207 (day: 32, eps001: 16, eps10: 45, eps300: 89, hour: 25)
+ * Context situations: 9336
+ * Data density: 0.00000090938997058951%
+ * Scale distribution: [1.0 x 9969]
+ * Average value of all ratings: 1.000000
+ * Standard deviation of all ratings: 0.000000
+ * Mode of all rating values: 1.000000
+ * Median of all rating values: 1.000000
+ *
+ ************************************************************************************/
+With Setup: cv -k 10 -p on --rand-seed 1 --test-view all
+Número de segmentos após o innerCrossfold: 5
+Número de segmentos após o innerCrossfold: 4
