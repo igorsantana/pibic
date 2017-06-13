@@ -115,7 +115,7 @@ public class ReductionBased extends Recommender {
 		if(this.rec.equals("itemknnunary")){
 			recsys = new ItemKNNUnary(train, test, fold);
 		}
-		recsys.setItemFrequency(true);
+//		recsys.setItemFrequency(true);
 		return recsys;
 	}
 	
