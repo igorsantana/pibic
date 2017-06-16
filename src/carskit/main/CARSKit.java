@@ -29,6 +29,7 @@ import carskit.alg.cars.transformation.hybridfiltering.DCR;
 import carskit.alg.cars.transformation.hybridfiltering.DCW;
 import carskit.alg.cars.transformation.prefiltering.ExactFiltering;
 import carskit.alg.cars.transformation.prefiltering.ReductionBased;
+import carskit.alg.cars.transformation.prefiltering.ReductionBasedDaVI;
 import carskit.alg.cars.transformation.prefiltering.SPF;
 import carskit.alg.cars.transformation.prefiltering.splitting.UserSplitting;
 import com.google.common.collect.*;
@@ -806,7 +807,8 @@ public class CARSKit {
  
             case "reductionbased":
             	return new ReductionBased(trainMatrix, testMatrix, fold);
-
+            case "davireductionbased":
+            	return new ReductionBasedDaVI(trainMatrix, testMatrix, fold);
             case "davibest":
             {
             	
