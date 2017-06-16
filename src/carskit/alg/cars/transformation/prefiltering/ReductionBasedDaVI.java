@@ -54,7 +54,7 @@ public class ReductionBasedDaVI extends ReductionBased {
 		}
 		DaVIALL.rateDao = rateDao;
 		Recommender model = (new DaVIALL(trainMatrix, testMatrix, "itemknnunary", cond)).getRecommender();
-		model.setItemFrequency(true);
+//		model.setItemFrequency(true);
 		return model;
 	}
 }
