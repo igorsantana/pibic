@@ -1,4 +1,6 @@
-recommender=reductionbased -tp 5 -traditional itemknnunary	 -innerfolds 5
+CombinedReduction
+
+recommender=combinedreduction -tp 5 -traditional bpr	 -innerfolds 5
 
 Onde,
 -tp: Porcentagem que será utilizada para determinar o tamanho de um segmento.
@@ -7,3 +9,16 @@ Onde,
 -traditional: Qual algoritmo será utilizado para criar os modelos internos que o ReductionBased se utiliza para fazer predições.
 
 -innerfolds:  Quantos folds serão utilizados no cross-validation interno do algoritmo, afim de escolher o melhor segmento.
+_____________________________________________________________________________________________________________________________________
+CombinedReductionDaVI
+recommender=davicombinedreduction -tp 5 -traditional bpr -innerfolds 5 -davi all
+
+Onde,
+-tp: Porcentagem que será utilizada para determinar o tamanho de um segmento.
+	 Exemplo: Caso exista o segmento tenha o tamanho igual ou maior que 5% dos conjunto inteiro, ele é considerado um segmento largo.
+
+-traditional: Qual algoritmo será utilizado para criar os modelos internos que o ReductionBased se utiliza para fazer predições.
+
+-innerfolds:  Quantos folds serão utilizados no cross-validation interno do algoritmo, afim de escolher o melhor segmento.
+
+-davi: Identifica qual algoritmo da abordagem DaVI será utilizado, "all" ou "best".
